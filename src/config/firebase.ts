@@ -5,13 +5,13 @@ import { getDatabase } from "firebase/database";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDFReODWtbyghcbdkbRQJmYj7LTCWiwUvE",
-  authDomain: "askabroad-2117f.firebaseapp.com",
-  databaseURL: "https://askabroad-2117f-default-rtdb.firebaseio.com",
-  projectId: "askabroad-2117f",
-  storageBucket: "askabroad-2117f.firebasestorage.app",
-  messagingSenderId: "998245554629",
-  appId: "1:998245554629:web:9b994e5f39601ba3ee53ac"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  databaseURL: import.meta.env.VITE_FIREBASE_DATABASE_URL,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
 
 // Initialize Firebase
